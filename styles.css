@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.select-box{
+    padding: 1rem;
+}
+
+.data-container{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.all-data{
+    position:relative;
+    overflow: hidden;
+}
+.card{
+    width:18vw;
+    height:18vw;
+    text-align: center;
+    padding: 0.1rem;
+    margin : 1rem;
+    border-radius: 10%;
+    transition: all 0.3s ease-in-out;
+}
+.confirm{
+    background-color: rgb(200, 216, 245);
+    border: 2px solid cornflowerblue;
+}
+.confirm:hover{
+    transform: scale(1.1);
+    background-color: cornflowerblue;
+}
+.active{
+    background-color: lightyellow;
+    border: 2px solid rgb(207, 207, 82);
+}
+.active:hover{
+    transform: scale(1.1);
+    background-color:rgb(207, 207, 82);
+}
+.recover{
+    background-color: rgb(200, 245, 215);
+    border: 2px solid rgb(115, 209, 115);
+}
+.recover:hover{
+    transform: scale(1.1);
+    background-color: rgb(115,209,115);
+}
+.death{
+    background-color: rgb(245, 200, 200);
+    border: 2px solid rgb(255, 143, 143);
+}
+.death:hover{
+    transform: scale(1.1);
+    background-color:rgb(255,143,143);
+}
+.search-box{
+    display:flex;
+    width:100vw;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+.data-container{
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height: 80vh;
+}
+.all-data img{
+    position: absolute;
+    top:0em;
+    left:0em;
+    width:100%;
+    height:auto;
+    opacity: 0.6;
+    z-index: -1;
+}
+.select-box{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (orientation: portrait){
+    .data-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+    .all-data{
+        position: relative;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+    .card{
+        width:40vw;
+        height:40vw;
+        margin:1.5rem;
+        justify-self: center;
+    }
+    .all-data img{
+        position: absolute;
+        top:0em;
+        height:100%;
+        width:auto;
+    }
+    #chartContainer{
+        position: absolute;
+        bottom: 0em;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .card{
+        margin:0.5rem;
+    }
+}
