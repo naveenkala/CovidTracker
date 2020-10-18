@@ -7,32 +7,52 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-	<h1><center>Corona Virus Cases</center></h1>
+	<h1 class="text">Corona Virus Cases</h1>
+	<h4>"Stay Safe, Sanitize yourself, Keep Distance, Put Mask on your Face." </h4>
+
     <div class = "container">
-    	<div class="select-box">
+      <!--<div class="select-box">
 	    	<select id="">
 	    		<option selected disabled>
 	    			Select Country
 	    		</option>
 	    	</select>
-		</div>
+		</div>-->
+ 
+		  
+	
+		
+			<div class="select-box">
+				<select id="country">
+					<option selected disabled>
+						<span>Select Country</span> 
+					</option>
+				</select>
+			</div>
+		
+		
+
+
+
+
+
 		<div class="all-data">
-			<img src="./bg.jpg" alt="corona virus image">
+			
 			<div class="data-container">  
 				<div class="card confirm">
-					<h2>Confirmed</h2>
+					<h2>Confirmed Cases</h2>
 					<h3 class="confirm-data card-data">0</h3>
 				</div>
 				<div class="card active">
-					<h2>Active</h2>
+					<h2>Active Cases</h2>
 					<h3 class="active-data card-data">0</h3>
 				</div>
 				<div class="card recover">
-					<h2>Recovered</h2>
+					<h2>Recovered Cases</h2>
 					<h3 class="recover-data card-data">0</h3>
 				</div>
 				<div class="card death">
-					<h2>Death</h2>
+					<h2>Death Cases</h2>
 					<h3 class="death-data card-data">0</h3>
 				</div>
 			</div>
