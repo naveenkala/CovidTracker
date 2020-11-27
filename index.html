@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Covid19 Tracker</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-	<h1><center>Corona Virus Cases</center></h1>
-    <div class = "container">
-    	<div class="select-box">
-	    	<select id="">
-	    		<option selected>
-	    			World
-	    		</option>
-	    	</select>
-		</div>
-		<div class="all-data">
-			<img src="./bg.jpg" alt="corona virus image">
-			<div class="data-container">  
-				<div class="card confirm">
-					<h2>Confirmed</h2>
-					<h3 class="confirm-data card-data">0</h3>
-				</div>
-				<div class="card active">
-					<h2>Active</h2>
-					<h3 class="active-data card-data">0</h3>
-				</div>
-				<div class="card recover">
-					<h2>Recovered</h2>
-					<h3 class="recover-data card-data">0</h3>
-				</div>
-				<div class="card death">
-					<h2>Death</h2>
-					<h3 class="death-data card-data">0</h3>
-				</div>
-			</div>
-			<div id="chartContainer" style="height: 300px; width: 100%;">
-				
-			</div>
-	</div>
-	</div>
-	<script src="./script.js"></script>
-	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-</body>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 class="text">Corona Virus Cases</h1>
+
+    <div class="container">
+      <div class="select-box">
+        <select id="country">
+          <option selected>
+            <span>World</span>
+          </option>
+        </select>
+      </div>
+
+      <div class="data-container">
+        <div class="card confirm">
+          <h2>Confirmed Cases</h2>
+          <h3 class="confirm-data card-data">0</h3>
+        </div>
+        <div class="card active">
+          <h2>Active Cases</h2>
+          <h3 class="active-data card-data">0</h3>
+        </div>
+        <div class="card recover">
+          <h2>Recovered Cases</h2>
+          <h3 class="recover-data card-data">0</h3>
+        </div>
+        <div class="card death">
+          <h2>Death Cases</h2>
+          <h3 class="death-data card-data">0</h3>
+        </div>
+      </div>
+      <div id="chartContainer" style="height: 300px; width: 100%"></div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  </body>
 </html>
